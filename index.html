@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <style>
-        /* This section makes the site look nice */
+/* --- CSS STYLES START HERE --- */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             line-height: 1.6;
@@ -14,32 +14,53 @@
             margin: 0 auto;
             padding: 20px;
         }
+        
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #f8f9fa;
+            padding: 15px 0;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 30px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: #555;
+            font-weight: bold;
+            font-size: 1.1em;
+            text-decoration: none; /* Removes underline from nav links */
+        }
+        nav a:hover {
+            color: #0366d6;
+        }
+        nav a.current {
+            color: #0366d6;
+            border-bottom: 2px solid #0366d6;
+        }
+
+        /* General Layout */
         header {
             text-align: center;
-            padding: 40px 0;
+            padding-bottom: 40px;
             border-bottom: 1px solid #eee;
         }
         h1 { margin-bottom: 0.2em; }
         h2 { color: #2c3e50; margin-top: 30px; }
-
-        /* Styling for the paper links */
-        .paper {
-            margin-bottom: 15px;
-        }
-        .paper-title {
-            font-weight: bold;
-            display: block;
-        }
-        .paper-meta {
-            color: #666;
-            font-size: 0.9em;
-        }
+        
+        /* Paper Links */
+        .paper { margin-bottom: 15px; }
+        .paper-title { font-weight: bold; display: block; }
+        .paper-meta { color: #666; font-size: 0.9em; }
         a { color: #0366d6; text-decoration: none; }
         a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-
+    <nav>
+        <a href="index.html" class="current">Home</a>
+        <a href="math.html">Math</a>
+        <a href="ceramics.html">Ceramics</a>
+    </nav>
     <header>
         <h1>[Jasmine Noory]</h1>
         <p>Researcher | Developer | Problem Solver</p>
